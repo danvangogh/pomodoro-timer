@@ -54,10 +54,10 @@ export default {
   }
   .pre-made-split {
     grid-column: 2/6;
-    margin-top: .5em;
+    margin-top: 1em;
   }
   .custom-split {
     grid-column: 7/9;
-    margin-top: .5em;
+    margin-top: 1em;
   }
 </style>
