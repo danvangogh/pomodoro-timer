@@ -1,10 +1,12 @@
 <template>
   <div class="clock">
     <div class="card">
-      <span class="pre-made-split">Pre-made Splits</span>
-      <span class="custom-split">Custom</span>
-      <!-- <PreMadeForm /> -->
-      <CustomForm />
+      <button class="pre-made-split">Pre-made Splits</button>
+      <button class="custom-split">Custom</button>
+      <div class="switch">
+        <!-- <PreMadeForm /> -->
+        <CustomForm />
+      </div>
       <button class="start-btn">Start</button>
     </div>
   </div>
@@ -55,13 +57,27 @@ export default {
     grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 3px;
   }
+
+  .switch {
+    grid-column: 1/10;
+    grid-row: 2/8;
+  }
   .pre-made-split {
     grid-column: 2/6;
     margin-top: 1em;
+    border: none;
+    background: none;
+    color: #E6E6E6;
+    font-size: 14px;
   }
   .custom-split {
     grid-column: 7/9;
     margin-top: 1em;
+    border: none;
+    background: none;
+    color: #E6E6E6;
+    font-size: 14px;
+    focus: none;
   }
   .start-btn {
     grid-column: 3/8;
@@ -75,5 +91,8 @@ export default {
     color: #FFFFFF;
     font-size: 14px;
     line-height: 0px;
+  }
+  button:focus {
+    outline: red;
   }
 </style>

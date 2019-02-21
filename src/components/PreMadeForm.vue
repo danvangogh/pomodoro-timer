@@ -28,12 +28,11 @@ export default {
 
 <style>
   .premade {
-    grid-column: 1/10;
-    grid-row: 2/8;
     padding: 0 2em;
+    height: 60%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: 3px;
     text-align: center;
     font-size: 12px;
