@@ -8,7 +8,6 @@
     <div class="box2"></div>
     <span class="minutes2">minutes.</span>
     <div class="arrow"></div>
-    <div class="start-btn"></div>
   </div>
 </template>
 
@@ -20,40 +19,48 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .custom{
+    grid-column: 1/10;
+    grid-row: 3/7;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 3px;
+    text-align: center;
+    font-size: 12px;
+  }
   .work {
-    grid-area: wr;
-    font-size: 10px;
+    grid-column: 2/6;
+    font-size: 12px;
     margin: auto;
   }
   .box1 {
-    grid-area: box1;
+
     background-color: grey;
     margin: 0px 2px 8px 2px;
   }
   .box2 {
-    grid-area: box2;
+
     background-color: grey;
     margin: 0px 2px 8px 2px;
   }
   .minutes1 {
-    grid-area: m1;
-    font-size: 10px;
+    grid-column: 7/9;
+    font-size: 12px;
     margin: auto;
   }
   .minutes2 {
-    grid-area: m2;
-    font-size: 10px;
+    grid-column: 7/9;
+    font-size: 12px;
     margin: auto;
   }
   .arrow {
 
   }
   .break {
-    grid-area: br;
-    font-size: 10px;
+    grid-column: 2/6;
+    font-size: 12px;
     margin: auto;
   }
-  .start-btn {
-    text-align: center;
-  }
+
 </style>

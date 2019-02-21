@@ -3,7 +3,9 @@
     <div class="card">
       <span class="pre-made-split">Pre-made Splits</span>
       <span class="custom-split">Custom</span>
-      <PreMadeForm />
+      <!-- <PreMadeForm /> -->
+      <CustomForm />
+      <button class="start-btn">Start</button>
     </div>
   </div>
 </template>
@@ -15,6 +17,7 @@ export default {
   name: 'ClockSelection',
   components: {
     PreMadeForm,
+    CustomForm,
   },
   data () {
     return {
@@ -59,5 +62,18 @@ export default {
   .custom-split {
     grid-column: 7/9;
     margin-top: 1em;
+  }
+  .start-btn {
+    grid-column: 3/8;
+    grid-row: 6/7;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF9501;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 0px;
   }
 </style>
