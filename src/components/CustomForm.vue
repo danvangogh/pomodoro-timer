@@ -64,9 +64,6 @@ export default {
     font-size: 12px;
     margin: auto;
   }
-  .arrow {
-
-  }
 
 
 </style>

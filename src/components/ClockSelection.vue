@@ -1,11 +1,13 @@
 <template>
   <div class="clock">
     <div class="card">
-      <button class="pre-made-split">Pre-made Splits</button>
-      <button class="custom-split">Custom</button>
-      <div class="switch">
-        <!-- <PreMadeForm /> -->
+      <button class="pre-made-split" @click="option = 'Pre-Made'">Pre-made Splits</button>
+      <button class="custom-split" @click="option = 'Custom'">Custom</button>
+      <div class="switch" v-if="option === 'Custom'">
         <CustomForm />
+      </div>
+      <div class="switch" v-if="option === 'Pre-Made'">
+        <PreMadeForm />
       </div>
       <button class="start-btn">Start</button>
     </div>
@@ -23,7 +25,10 @@ export default {
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      option: 'Pre-Made',
+      workTime: 0,
+      breakTime: 0,
     }
   }
 }

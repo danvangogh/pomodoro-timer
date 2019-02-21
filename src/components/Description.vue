@@ -15,9 +15,9 @@
 </script>
 
 <style>
-
   .description {
-    grid-area: d
+    grid-area: d;
+    margin: auto;
   }
 
 </style>
