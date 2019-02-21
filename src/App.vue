@@ -23,7 +23,7 @@ export default {
     ClockSelection,
     Timer,
     Hourglass,
-  }
+  },
 }
 </script>
 
@@ -32,20 +32,20 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    background-color: #242424;
   }
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #242424;
   color: #E6E6E6;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 400px 1fr 400px 1fr;
   grid-template-areas:
   "h h . . ."
-  ". d . hg ."
+  ". d . tm ."
   ". cs . hg ."
   ;
   grid-template-rows: 75px 1fr 1fr;
